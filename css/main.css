@@ -1,0 +1,174 @@
+@charset "utf-8";
+* {font-size: 16px;font-weight: 500; }
+body {position: fixed;top: 0; left: 0; background: #c9171e url("../images/main/itsmyturn.png") no-repeat fixed center ; font-family: 'S-CoreDream-4Regular';}
+
+/* font */
+
+@font-face { font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'S-CoreDream-5Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'S-CoreDream-4Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'netmarbleB'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff'); font-weight: normal; font-style: normal; }
+/* 태그초기화 */
+body,html {height: 100%; width: 100%;}
+body, h1, h2, h3, h4, h5, h6, p, ul, figure, figcaption{margin: 0;padding: 0}
+h1, h2, h3, h4, h5, h6{font-size: 100%}
+ul{list-style: none;}
+a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit}
+img{vertical-align: top;border: none}
+address{font-style: normal}
+button {background: none; border:none;}
+header, nav, section, article, footer, aside, figure, figcaption{display: block;}
+.area {width: 1224px; margin: 0 auto;}
+
+/* 공통 클래스 */
+.f_l{float: left;}
+.f_r{float: right}
+.p_r{position: relative;}
+.p_a{position: absolute;}
+.clearfix:after{content: "";display: block;clear: both;}
+.blind{font-size: 0;line-height: 0;width: 1px;height: 1px;overflow: hidden;position: absolute;top: 0;left: -9999px;text-indent: -9999px}
+
+
+/* 메인헤더 */
+#header {position: fixed; top: 0; left: 0; right: 0; color: #fff; margin-top: 80px;}
+#header h2{float: left; padding-left: 150px;}
+#header .menu{float:right; padding-right: 150px;}
+#header .menu ul{}
+#header .menu ul li{float: left;font-family:'S-CoreDream-5Medium'; letter-spacing: 1.5px; }
+#header .menu ul li + li {margin-left: 30px;}
+#header .menu ul li a {transition: all 0.3s;} 
+#header .menu ul li:hover a {color: #000;}
+
+/* container */
+#container {height: 100%; width: 100%; overflow: hidden;}
+#container .cntwrap {position: absolute; top: 50%; margin-top: -230px; }
+
+#container .cntwrap section{float: left; width: 725px; height: 460px; background: #ccc; margin-right: 195px; border: 4px solid #000;}
+
+#container .cntwrap #cnt1,#container .cntwrap #cnt2,#container .cntwrap #cnt3,#container .cntwrap #cnt4,#container .cntwrap #cnt5 {position: relative;}
+#container .cntwrap #cnt1:before {position: absolute; bottom: -100px; left: 90px; content:'';width: 547px; height: 202px; background: url("../images/main/sooltong.png") no-repeat;}
+
+#container .cntwrap section#profile {width: 100vw; border: none; margin-right: 0; background: none;}
+#container .cntwrap #cnt2:before {position: absolute;bottom: -70px; left: 190px; content: '';width: 434px; height: 200px; background: url("../images/main/lush.png")no-repeat;}
+#container .cntwrap #cnt3:before {position: absolute; bottom: -120px; left: 160px; content: '';width: 406px; height: 243px; background: url("../images/main/design.png") no-repeat; }
+#container .cntwrap #cnt4:before {position: absolute; bottom: -80px; left: 50px;
+content:''; width: 631px; height: 202px; background: url("../images/main/webstandard.png") no-repeat;}
+#container .cntwrap #cnt5:before {position: absolute; bottom: -130px; left: 100px;
+content: ''; width: 517px; height: 275px; background: url("../images/main/megabox.png") no-repeat;}
+
+
+/* modal1 공통 */
+.modal_cnt { visibility: hidden; width: 100%; height: 100%; position: fixed; overflow-y: auto; left: 0; top: 100%; background: #fff; z-index: 1000;}
+.modal_cnt #intro {background: #a4cb50; height: 1111px;}
+
+.modal_cnt button {z-index:900; position:fixed; right: 40px; top: 40px; background:#fff url("../images/sub/close.png")no-repeat center; width: 60px; height: 60px; border-radius: 50%; cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
+.modal_cnt .introLeft h2 img {padding-top: 393px;}
+
+.modal_cnt .introLeft ul {color: #000; font-weight: 500;}
+.modal_cnt .introLeft > ul > li{font-size: 18px; font-family:'S-CoreDream-5Medium';padding-top: 16px;}
+.modal_cnt .introLeft > ul > li > ul{}
+.modal_cnt .introLeft > ul > li > ul > li{font-size: 14px; padding-top: 10px;font-family:'S-CoreDream-5Medium' }
+.modal_cnt .introLeft a {transition: all 0.4s; margin-top: 30px; width: 249px; height: 60px; line-height: 60px; font-size: 20px; color: #fff; border: 1px solid #fff; display: block; text-align: center;}
+.modal_cnt .introLeft a:hover {border-radius: 20px; background: #fff; color: #000;}
+
+
+.modal_cnt .introImg {position: absolute; top: 140px; right: 0;}
+
+
+
+/* modal1 술통 */
+.modal_cnt .concept {height: 1049px;background: #f2f2f2; }
+.modal_cnt .concept .area > ul {padding-top: 250px;}
+.modal_cnt .concept .area > ul > li {font-size: 22px; font-family: 'S-CoreDream-5Medium'}
+.modal_cnt .concept .area > ul > li + li {padding-top: 155px;}
+.modal_cnt .concept .area > ul > li > ul {}
+.modal_cnt .concept .area > ul > li > ul > li{padding-top: 40px; font-size: 18px; line-height: 30px;font-family: 'S-CoreDream-4Regular';
+}
+.modal_cnt .concept .area > ul > li > ul img {padding-top: 80px;}
+
+.modal_cnt .explanation {height: 4960px; background: #fff;}
+.explanation .area .color > ul{padding-top: 250px; }
+.explanation .area .color > ul > li{font-size: 24px;font-family: 'S-CoreDream-5Medium'}
+.explanation .area .color > ul > li + li {padding-top: 70px;}
+.explanation .area .color > ul > li > ul {}
+.explanation .area .color > ul > li > ul > li{text-align: center; padding-top: 100px;}
+
+.modal_cnt .page {padding-top: 370px;}
+.modal_cnt .page ul {}
+.modal_cnt .page > ul > li{font-size: 22px;font-family: 'S-CoreDream-5Medium'}
+.modal_cnt .page > ul > li + li {margin-top: 288px;}
+.modal_cnt .page > ul > li >ul {}
+.modal_cnt .page > ul > li >ul >li{font-size: 18px; padding-top: 30px;font-family: 'S-CoreDream-4Regular'; line-height: 30px;}
+
+.modal_cnt .page ul li .mainImg {margin-top: 115px; height: 862px;}
+.modal_cnt .page ul li .mainImg .left{float: left; padding-top: 74px;}
+.modal_cnt .page ul li .mainImg .right{float: right;}
+.modal_cnt .page ul li .subImg li {padding-top: 0;}
+
+/* modal2 러쉬 */
+#modal2 #intro {background: #000;}
+#modal2 #intro .area .introLeft ul li {color: #fff; font-family: 'S-CoreDream-4Regular';}
+#modal2 #intro .area .introLeft > ul > li > ul > li{font-family: 'S-CoreDream-3Light'; letter-spacing: 1.1px;}
+#modal2.modal_cnt .introLeft h2 img {padding-top: 549px;}
+#modal2.modal_cnt .introLeft a:hover { font-family: 'S-CoreDream-5Medium'}
+
+#modal2 #lushIntro {height: 1000px;background: #fff; padding-top: 250px;}
+#modal2 #lushIntro .left {float: left;}
+#modal2 #lushIntro .left > ul > li {font-size: 22px; font-family: 'S-CoreDream-5Medium'; }
+#modal2 #lushIntro .left > ul > li + li {padding-top: 185px;}
+#modal2 #lushIntro .left > ul > li > ul > li {font-size: 18px; padding-top: 40px;font-family:'S-CoreDream-4Regular';}
+
+#modal2 #lushIntro .right {float: right;}
+
+#modal2 #lushapp {height: 1750px; background: #f2f2f2; padding-top: 250px;}
+#modal2 #lushapp .area > ul > li {font-size: 22px;font-family: 'S-CoreDream-5Medium';}
+#modal2 #lushapp .area > ul > li > ul >li {font-size: 18px;font-family:'S-CoreDream-4Regular'; padding-top: 40px; line-height: 30px;}
+#modal2 #lushapp .area img {margin-left: 160px; margin-top: 85px;}
+
+/* modal3 */
+#modal3 {background: #f2f2f2;}
+#design h3{font-size: 22px; padding: 150px 0 40px; font-family: 'S-CoreDream-5Medium'}
+#design .banner img {width: 100%; }
+#design .banner .shopping ul li {float: left; width: 49%; margin-right: 2%; margin-bottom: 2%;}
+#design .banner .shopping ul li:last-child {margin: 0;}
+#design .banner .shopping ul li img {}
+#design .banner .nike img {margin-bottom: 25px;}
+#design .detail > div {text-align:center; }
+#design .illust > div {text-align: center; padding-bottom: 160px;}
+
+/* modal4 */
+
+#modal4.modal_cnt #intro {background: #3685B5; height: 100%;}
+#modal4.modal_cnt .introLeft h2 img {padding-top: 469px;}
+#modal4.modal_cnt .introLeft ul {color: #fff;}
+#modal4.modal_cnt .introLeft ul li ul li{font-family: 'S-CoreDream-3Light';}
+
+
+/* modal5 */
+#modal5.modal_cnt #intro {background: #f2f2f2; height: 100%;}
+
+#modal5.modal_cnt .introLeft a {border-color: #662483; color: #662483; background: #f2f2f2;}
+#modal5.modal_cnt .introLeft a:hover { background: #662483; color: #fff;}
+#modal5.modal_cnt .introLeft h2 img {padding-top: 393px;}
+
+
+
+
+/* follow */
+#follow {position: absolute; z-index: 1000; }
+
+/* profile */
+#container .cntwrap  #profile { height: 470px;}
+#container .cntwrap  #profile .wrap {width: 1053px; height: 100%; padding-left: 500px; }
+#container .cntwrap  #profile .my {float: left; padding-top: 37px;}
+#container .cntwrap  #profile .introduce {padding-top: 30px;  float: left; margin-left: 90px;color: #fff; }
+#container .cntwrap  #profile .introduce li { font-size: 18px;padding-bottom: 30px;}
+#container .cntwrap  #profile .introduce h3 {font-size: 24px; padding-top: 15px;}
+#container .cntwrap  #profile .introduce .skill > div {float: left; margin-right: 20px; width: 90px;height: 90px; border: 1px solid #fff; border-radius: 50%; margin-top: 20px; text-align: center; line-height: 90px; font-size: 28px;
+    }
+#container .cntwrap  #profile .introduce .skill > div span {display: block; font-family: 'S-CoreDream-3Light';letter-spacing: 1.2px; font-size: 14px; line-height: 50px; }

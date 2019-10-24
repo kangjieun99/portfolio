@@ -23,7 +23,8 @@ $(document).ready(function() {
       //.cntwrap, section : 가로크기와 padding-left 강제 지정
       cntPadLeft = ($(this).width() - $('#cnt1').outerWidth()) / 2;
       cntWidth2 = $('.cntwrap #profile').width();
-      $cntwrap.css({width: cntWidth*(total-1)+cntWidth2, paddingLeft: cntPadLeft});
+      $cntwrap.css({paddingLeft: cntPadLeft});
+      //$cntwrap.css({width: cntWidth*(total-1)+cntWidth2, paddingLeft: cntPadLeft});
 
       //추가 : 현재보여지는 본문이 resize 되어 나타나지 않을 경우 위치 잡기
       $cntwrap.stop().animate({marginLeft: tgIdx*cntWidth*-1});

@@ -45,7 +45,7 @@ header, nav, section, article, footer, aside, figure, figcaption{display: block;
 
 /* container */
 #container {height: 100%; width: 100%; overflow: hidden;}
-#container .cntwrap {position: absolute; top: 50%; margin-top: -230px; }
+#container .cntwrap {position: absolute; top: 50%; margin-top: -230px; width: 9000px;}
 
 #container .cntwrap section{float: left; width: 725px; height: 460px; background: #ccc; margin-right: 195px; border: 4px solid #000;}
 

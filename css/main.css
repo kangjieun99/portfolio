@@ -139,7 +139,10 @@ content: ''; width: 517px; height: 275px; background: url("../images/main/megabo
 #design .banner .shopping ul li img {}
 #design .banner .nike img {margin-bottom: 25px;}
 #design .detail > div {text-align:center; }
+#design .detail img {width: 700px;}
 #design .illust > div {text-align: center; padding-bottom: 160px;}
+
+#design .product div + div {margin-top: 50px;}
 
 /* modal4 */
 

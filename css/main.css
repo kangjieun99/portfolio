@@ -53,7 +53,7 @@ header, nav, section, article, footer, aside, figure, figcaption{display: block;
 #container .cntwrap #cnt1:before {position: absolute; bottom: -100px; left: 90px; content:'';width: 547px; height: 202px; background: url("../images/main/sooltong.png") no-repeat;}
 
 #container .cntwrap section#profile {width: 100vw; border: none; margin-right: 0; background: none;}
-#container .cntwrap #cnt2:before {position: absolute;bottom: -70px; left: 190px; content: '';width: 434px; height: 200px; background: url("../images/main/lush.png")no-repeat;}
+#container .cntwrap #cnt2:before {position: absolute;bottom: -70px; left: 190px; content: '';width: 434px; height: 200px; background: url("../images/main/lush.png") no-repeat;}
 #container .cntwrap #cnt3:before {position: absolute; bottom: -120px; left: 160px; content: '';width: 406px; height: 243px; background: url("../images/main/design.png") no-repeat; }
 #container .cntwrap #cnt4:before {position: absolute; bottom: -80px; left: 50px;
 content:''; width: 631px; height: 202px; background: url("../images/main/webstandard.png") no-repeat;}
@@ -65,7 +65,7 @@ content: ''; width: 517px; height: 275px; background: url("../images/main/megabo
 .modal_cnt { visibility: hidden; width: 100%; height: 100%; position: fixed; overflow-y: auto; left: 0; top: 100%; background: #fff; z-index: 1000;}
 .modal_cnt #intro {background: #a4cb50; height: 1111px;}
 
-.modal_cnt button {z-index:900; position:fixed; right: 40px; top: 40px; background:#fff url("../images/sub/close.png")no-repeat center; width: 60px; height: 60px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; cursor: pointer;
+.modal_cnt button {z-index:900; position:fixed; right: 40px; top: 40px; background:#fff url("../images/sub/close.png") no-repeat center; width: 60px; height: 60px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
 .modal_cnt .introLeft h2 img {padding-top: 393px;}
 

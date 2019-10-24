@@ -65,7 +65,7 @@ content: ''; width: 517px; height: 275px; background: url("../images/main/megabo
 .modal_cnt { visibility: hidden; width: 100%; height: 100%; position: fixed; overflow-y: auto; left: 0; top: 100%; background: #fff; z-index: 1000;}
 .modal_cnt #intro {background: #a4cb50; height: 1111px;}
 
-.modal_cnt button {z-index:900; position:fixed; right: 40px; top: 40px; background:#fff url("../images/sub/close.png")no-repeat center; width: 60px; height: 60px; border-radius: 50%; cursor: pointer;
+.modal_cnt button {z-index:900; position:fixed; right: 40px; top: 40px; background:#fff url("../images/sub/close.png")no-repeat center; width: 60px; height: 60px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
 .modal_cnt .introLeft h2 img {padding-top: 393px;}
 
@@ -123,12 +123,16 @@ content: ''; width: 517px; height: 275px; background: url("../images/main/megabo
 #modal2 #lushIntro .left > ul > li + li {padding-top: 185px;}
 #modal2 #lushIntro .left > ul > li > ul > li {font-size: 18px; padding-top: 40px;font-family:'S-CoreDream-4Regular';}
 
-#modal2 #lushIntro .right {float: right;}
+#modal2 #lushIntro .right img {float: right;opacity:1;}
+
+
 
 #modal2 #lushapp {height: 1750px; background: #f2f2f2; padding-top: 250px;}
 #modal2 #lushapp .area > ul > li {font-size: 22px;font-family: 'S-CoreDream-5Medium';}
 #modal2 #lushapp .area > ul > li > ul >li {font-size: 18px;font-family:'S-CoreDream-4Regular'; padding-top: 40px; line-height: 30px;}
 #modal2 #lushapp .area img {margin-left: 160px; margin-top: 85px;}
+
+
 
 /* modal3 */
 #modal3 {background: #f2f2f2;}

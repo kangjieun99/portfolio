@@ -9,7 +9,7 @@ $(document).ready(function() {
   var cntWidth2;
   var cntPadLeft;
   var marginX; //$cntwrap을 애니메이트 시키기 위한 marginLeft 변수값
-  console.log(cntWidth, total);
+  //console.log(cntWidth, total);
 
   //1) 로딩이 완료된 경우 초기 설정 : 인디케이터 첫번째 li에 .on을 추가
   $menu.eq(0).addClass('on');
@@ -39,7 +39,7 @@ $(document).ready(function() {
       if( $cntwrap.is('animated') ) return false;
 
     tgIdx = $(this).parent().index();
-    console.log(tgIdx); //0,1,2,3,4,5
+    //console.log(tgIdx); //0,1,2,3,4,5
     $(this).parent().addClass('on').siblings().removeClass('on');
     if (tgIdx == total-2) marginX = -(tgIdx+1)*cntWidth-cntPadLeft; //마지막 프로필 부분 : #cnt1부터 #cnt5까지와 가장 처음 .cntwrap의 paddingLeft
     else marginX = tgIdx*cntWidth*-1;
@@ -101,7 +101,7 @@ $(document).ready(function() {
     e.preventDefault();
     var $openBtn = $(this);   //닫기버튼 클릭시 열어준 버튼으로 포커스 강제 이동
     var $mdCnt = $( $openBtn.attr('href') ); //#modal1, #modal2 문자타입이 아니라 선택자
-    console.log($mdCnt, typeof $mdCnt);
+    //console.log($mdCnt, typeof $mdCnt);
     var $closeBtn = $mdCnt.find('.close_btn');  //닫기 버튼
     var $first = $mdCnt.find('[data-link="first"]');    //처음 포커스가 이동할 대상
     var $last = $mdCnt.find('[data-link="last"]');      //마지막 포커스가 이동할 대상
@@ -130,7 +130,7 @@ $(document).ready(function() {
       timer = setTimeout(function () {
         var y = ( $(window).height() - $mdCnt.outerHeight() ) / 2;
         var x = ( $(window).width() - $mdCnt.outerWidth() ) / 2;
-        console.log(x, y)
+        //console.log(x, y)
         $mdCnt.css({top: y, left: x});
       }, 100);
     });
